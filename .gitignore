@@ -1,0 +1,27 @@
+# Large APK archives (kept locally in apk/ and hosted via GitHub Release)
+/apk/*.apk
+
+# External reference repos and temporary worktrees
+/repo/
+
+# Task plans, prototypes, and temporary evidence
+/task/
+
+# Local private credentials and runtime configuration (keep *.example* templates)
+/config/*
+!/config/*.example*
+.env
+.env.*
+mediamtx.yml
+
+# Local proprietary vendor binaries (TUTK SDK, Android bionic, ioctl9930.bin),
+# DEX dumps, Frida capture logs, and test snapshots
+/local/
+
+# Runtime binaries, Python caches, logs, and OS files
+mediamtx
+__pycache__/
+*.py[cod]
+*.log
+.DS_Store
+Thumbs.db
